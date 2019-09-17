@@ -4,10 +4,13 @@ import React from "react"
 // import Header from "./components/Header"
 // import MainContent from "./components/MainContent"
 import './style.css'
-
-
+import productsData from "./SchoolProduct"
+import Product  from "./Product"
 function App()
 {
+  
+  
+  const productComponents = productsData.map(item => <Product product={item}/>)
  // const MapComp = MapData.map(contact => <Contact key={contact.id} name={contact.name} phone={contact.phone} email={contact.email}/>)
 
   // const nums = [1,2,3,4,5]
@@ -19,9 +22,11 @@ function App()
 
  return (
    <div>
+{productComponents}
 
-<h2>sdgfs</h2>
 
+</div>
+ )
 {/* <Contact
 name="megha"
 phone="55555555"
@@ -44,8 +49,7 @@ email="viv@gmail.com"
 /> */}
 
 
-</div>
- )
+
 
 
 
