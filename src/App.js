@@ -4,13 +4,11 @@ import React from "react"
 // import Header from "./components/Header"
 // import MainContent from "./components/MainContent"
 import './style.css'
-import Contact from "./Contact";
 
-import MapData from "./MapData"
 
 function App()
 {
-  const MapComp = MapData.map(contact => <Contact key={contact.id} name={contact.name} phone={contact.phone} email={contact.email}/>)
+ // const MapComp = MapData.map(contact => <Contact key={contact.id} name={contact.name} phone={contact.phone} email={contact.email}/>)
 
   // const nums = [1,2,3,4,5]
   // const doubled = nums.map(function(num){
@@ -21,8 +19,8 @@ function App()
 
  return (
    <div>
- {MapComp}
 
+<h2>sdgfs</h2>
 
 {/* <Contact
 name="megha"
