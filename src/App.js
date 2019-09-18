@@ -1,66 +1,26 @@
 import React from "react"
-//import ReactDOM from 'react-dom';
-// import Footer from "./components/Footer"
-// import Header from "./components/Header"
-// import MainContent from "./components/MainContent"
 import './style.css'
-import productsData from "./SchoolProduct"
-import Product  from "./Product"
+import TodoItem from "./TodoItem"
+import Todosdata from "./TodosData"
+
 function App()
 {
-  
-  
-  const productComponents = productsData.map(item => <Product product={item}/>)
- // const MapComp = MapData.map(contact => <Contact key={contact.id} name={contact.name} phone={contact.phone} email={contact.email}/>)
-
-  // const nums = [1,2,3,4,5]
-  // const doubled = nums.map(function(num){
-  //   return num*2;
-   
-  // })
-  // console.log(doubled)
-
+const todoItems = Todosdata.map(item => <TodoItem key={item.id} item={item}/>)
  return (
-   <div>
-{productComponents}
+ <div>
+   
+   {todoItems}
+{/* <TodoItem/>
 
+<TodoItem/>
 
+<TodoItem/>
+
+<TodoItem/> */}
 </div>
  )
-{/* <Contact
-name="megha"
-phone="55555555"
-email="megha.hs@gmail.com"
-/>
-<Contact
-name="abhay"
-phone="55555555"
-email="abhay@gmail.com"
-/>
-<Contact
-name="niha"
-phone="55555555"
-email="niha@gmail.com"
-/>
-<Contact
-name="viv"
-phone="55555555"
-email="viv@gmail.com"
-/> */}
 
-
-
-
-
-
-
-//     <div>
-//     <Header />
-//     <MainContent />
-//   <Footer />
-// </div>
-  // )
 }
 
-export default App;
 
+export default App;
